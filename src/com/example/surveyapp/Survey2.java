@@ -10,19 +10,19 @@ import android.widget.Button;
 
 public class Survey2 extends Activity {
 Button b1;
-Intent i;
+Intent ii;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_survey2);
-		b1=(Button)findViewById(R.id.button2);
+		b1=(Button)findViewById(R.id.b22);
 		b1.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				i=new Intent(Survey2.this,Survey3.class);
-				startActivity(i);
+				ii=new Intent(Survey2.this,Survey3.class);
+				startActivity(ii);
 			}
 		});
 	}

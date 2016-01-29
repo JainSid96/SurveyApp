@@ -9,8 +9,53 @@
     tools:context=".Survey3" >
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_above="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:text="Vendor Details"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText8"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="28dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but1"
+        android:layout_below="@+id/textView2"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText9"
+        android:layout_centerHorizontal="true"
+        android:text="Get Location" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignParentLeft="true"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="Latitude" />
 
 </RelativeLayout>
