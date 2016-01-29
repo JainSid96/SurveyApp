@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_survey1">Survey1</string>
     <string name="title_activity_survey2">Survey2</string>
+    <string name="title_activity_survey3">Survey3</string>
 
 </resources>
