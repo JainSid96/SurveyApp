@@ -7,5 +7,10 @@
     <string name="title_activity_survey1">Survey1</string>
     <string name="title_activity_survey2">Survey2</string>
     <string name="title_activity_survey3">Survey3</string>
+    <string name="title_activity_survey4">Survey4</string>
+    <string name="title_activity_survey5">Survey5</string>
+    <string name="title_activity_survey6">Survey6</string>
+    <string name="title_activity_survey7">Survey7</string>
+    <string name="title_activity_survey8">Survey8</string>
 
 </resources>

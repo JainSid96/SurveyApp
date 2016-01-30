@@ -5,10 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />	
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -35,6 +33,26 @@
         <activity
             android:name="com.example.surveyapp.Survey3"
             android:label="@string/title_activity_survey3" >
+        </activity>
+        <activity
+            android:name="com.example.surveyapp.Survey4"
+            android:label="@string/title_activity_survey4" >
+        </activity>
+        <activity
+            android:name="com.example.surveyapp.Survey5"
+            android:label="@string/title_activity_survey5" >
+        </activity>
+        <activity
+            android:name="com.example.surveyapp.Survey6"
+            android:label="@string/title_activity_survey6" >
+        </activity>
+        <activity
+            android:name="com.example.surveyapp.Survey7"
+            android:label="@string/title_activity_survey7" >
+        </activity>
+        <activity
+            android:name="com.example.surveyapp.Survey8"
+            android:label="@string/title_activity_survey8" >
         </activity>
     </application>
 

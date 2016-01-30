@@ -26,24 +26,32 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f080011;
-        public static final int action_settings=0x7f080013;
+        public static final int action_settings=0x7f08001b;
         public static final int b22=0x7f08000c;
         public static final int but1=0x7f080010;
         public static final int button1=0x7f08000b;
+        public static final int button2=0x7f080013;
+        public static final int button25=0x7f080014;
+        public static final int button26=0x7f080015;
         public static final int editText1=0x7f080006;
         public static final int editText2=0x7f080007;
         public static final int editText3=0x7f080004;
         public static final int editText4=0x7f080008;
         public static final int editText5=0x7f08000a;
+        public static final int editText6=0x7f080016;
+        public static final int editText7=0x7f080018;
         public static final int editText8=0x7f08000f;
         public static final int editText9=0x7f08000e;
         public static final int ets2=0x7f08000d;
+        public static final int ratingBar1=0x7f080019;
+        public static final int ratingBar2=0x7f08001a;
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080000;
         public static final int textView3=0x7f080005;
         public static final int textView4=0x7f080002;
         public static final int textView5=0x7f080001;
         public static final int textView6=0x7f080009;
+        public static final int textView7=0x7f080017;
         public static final int textView9=0x7f080012;
     }
     public static final class layout {
@@ -51,12 +59,22 @@ public final class R {
         public static final int activity_survey1=0x7f030001;
         public static final int activity_survey2=0x7f030002;
         public static final int activity_survey3=0x7f030003;
+        public static final int activity_survey4=0x7f030004;
+        public static final int activity_survey5=0x7f030005;
+        public static final int activity_survey6=0x7f030006;
+        public static final int activity_survey7=0x7f030007;
+        public static final int activity_survey8=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f070000;
         public static final int survey1=0x7f070001;
         public static final int survey2=0x7f070002;
         public static final int survey3=0x7f070003;
+        public static final int survey4=0x7f070004;
+        public static final int survey5=0x7f070005;
+        public static final int survey6=0x7f070006;
+        public static final int survey7=0x7f070007;
+        public static final int survey8=0x7f070008;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -65,6 +83,11 @@ public final class R {
         public static final int title_activity_survey1=0x7f050003;
         public static final int title_activity_survey2=0x7f050004;
         public static final int title_activity_survey3=0x7f050005;
+        public static final int title_activity_survey4=0x7f050006;
+        public static final int title_activity_survey5=0x7f050007;
+        public static final int title_activity_survey6=0x7f050008;
+        public static final int title_activity_survey7=0x7f050009;
+        public static final int title_activity_survey8=0x7f05000a;
     }
     public static final class style {
         /** 

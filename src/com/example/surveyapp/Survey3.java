@@ -2,15 +2,17 @@ package com.example.surveyapp;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class Survey3 extends Activity {
- Button b1;
+ Button b1,b2;
  GPSTracker gps;
  EditText et1,et2;
 	@Override
@@ -20,6 +22,7 @@ public class Survey3 extends Activity {
 		b1 = (Button) findViewById(R.id.but1);
 		et1=(EditText)findViewById(R.id.editText8);
 		et2=(EditText)findViewById(R.id.editText9);
+		b2=(Button)findViewById(R.id.button2);
 		b1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -45,6 +48,17 @@ public class Survey3 extends Activity {
 			        	// Ask user to enable GPS/network in settings
 			        	gps.showSettingsAlert();
 			        }
+			}
+		});
+		b2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent i;
+				i=new Intent(Survey3.this,Survey4.class);
+				startActivity(i);
+				
 			}
 		});
 	}

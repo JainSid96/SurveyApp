@@ -7,12 +7,12 @@ import android.os.CountDownTimer;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-int x=5;
+int x=3;
 	Intent i;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		task tm=new task(5000,500);
+		task tm=new task(3000,300);
 		tm.start();
 		
 	}
@@ -21,7 +21,7 @@ int x=5;
 	{
 
 		public task(long millisInFuture, long countDownInterval) {
-			super(5000, 500);
+			super(3000, 300);
 			// TODO Auto-generated constructor stub
 		}
 
