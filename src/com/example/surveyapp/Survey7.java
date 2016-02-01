@@ -21,7 +21,7 @@ Button b1;
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i;
-				i=new Intent(Survey7.this,Survey8.class);
+				i=new Intent(Survey7.this,CaptureImage.class);
 				startActivity(i);
 			}
 		});
