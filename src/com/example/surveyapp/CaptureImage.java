@@ -1,9 +1,15 @@
 package com.example.surveyapp;
 
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,6 +19,7 @@ import android.widget.ImageView;
 public class CaptureImage extends Activity {
 	 private static final int CAMERA_REQUEST = 1888; 
 	    private ImageView imageView;
+	    String image;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,9 +50,21 @@ public class CaptureImage extends Activity {
 	
 	
 	 protected void onActivityResult(int requestCode, int resultCode, Intent data) {  
-	        if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) {  
+	        if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) { 
+	        	 Uri selectedImage = data.getData();
+		         InputStream imageStream;
 	            Bitmap photo = (Bitmap) data.getExtras().get("data"); 
 	            imageView.setImageBitmap(photo);
+	            try {
+					imageStream = getContentResolver().openInputStream(selectedImage);
+					Bitmap yourSelectedImage = BitmapFactory.decodeStream(imageStream);
+				    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+	                yourSelectedImage.compress(Bitmap.CompressFormat.PNG, 90, stream); 
+	                byte [] byte_arr = stream.toByteArray();
+	                image = Base64.encodeToString(byte_arr, Base64.DEFAULT);}
+	            catch(Throwable e) {
+					
+				}
 	        }  
 	    } 
 
