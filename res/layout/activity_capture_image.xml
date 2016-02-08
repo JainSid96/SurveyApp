@@ -8,15 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CaptureImage" >
 
-    <ImageView
-        android:id="@+id/iv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:src="@drawable/ic_launcher" />
-
     <Button
         android:id="@+id/image"
         android:layout_width="wrap_content"
@@ -30,9 +21,18 @@
         android:id="@+id/next1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/iv1"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
         android:background="@null"
         android:text="Next" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

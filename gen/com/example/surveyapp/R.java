@@ -22,7 +22,10 @@ public final class R {
     }
     public static final class drawable {
         public static final int bg=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int edittext=0x7f020001;
+        public static final int ic=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int street=0x7f020004;
     }
     public static final class id {
         public static final int RadioButton01=0x7f08001d;
@@ -46,8 +49,8 @@ public final class R {
         public static final int editText8=0x7f080012;
         public static final int editText9=0x7f080011;
         public static final int ets2=0x7f080010;
-        public static final int image=0x7f080001;
-        public static final int iv1=0x7f080000;
+        public static final int image=0x7f080000;
+        public static final int iv1=0x7f080001;
         public static final int next1=0x7f080002;
         public static final int radioButton1=0x7f080018;
         public static final int radioButton2=0x7f080019;

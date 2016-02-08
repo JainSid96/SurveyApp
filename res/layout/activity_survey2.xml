@@ -16,7 +16,8 @@
         android:layout_alignBaseline="@+id/textView6"
         android:layout_alignBottom="@+id/textView6"
         android:layout_alignLeft="@+id/editText4"
-        android:ems="10" />
+        android:ems="10" 
+        android:background="@drawable/edittext"/>
 
     <Button
         android:id="@+id/b22"
@@ -68,7 +69,8 @@
         android:layout_alignBottom="@+id/textView5"
         android:layout_alignParentRight="true"
         android:layout_marginRight="15dp"
-        android:ems="10" />
+        android:ems="10" 
+        android:background="@drawable/edittext"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -86,7 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText4"
         android:layout_centerVertical="true"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
     <TextView
         android:id="@+id/textView4"
@@ -104,7 +107,8 @@
         android:layout_above="@+id/editText3"
         android:layout_marginBottom="20dp"
         android:layout_toRightOf="@+id/textView6"
-        android:ems="10" >
+        android:ems="10"
+        android:background="@drawable/edittext" >
 
         <requestFocus />
     </EditText>
@@ -117,7 +121,8 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_marginBottom="29dp"
         android:text="Tphone"
-        android:textSize="15sp" />
+        android:textSize="15sp" 
+        />
 
     <EditText
         android:id="@+id/ets2"
@@ -126,6 +131,7 @@
         android:layout_alignBaseline="@+id/textView1"
         android:layout_alignBottom="@+id/textView1"
         android:layout_alignLeft="@+id/editText3"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
 </RelativeLayout>

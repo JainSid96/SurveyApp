@@ -16,25 +16,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="50dp"
-        android:ems="10" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="35dp"
-        android:ems="10" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignTop="@+id/editText2"
-        android:text="Famous Dishes" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
     <EditText
         android:id="@+id/editText3"
@@ -42,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
         android:layout_centerVertical="true"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
     <TextView
         android:id="@+id/textView3"
@@ -51,15 +35,6 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignTop="@+id/editText3"
         android:text="Other Dishes" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/editText1"
-        android:layout_marginLeft="14dp"
-        android:text="Seasonal" />
 
     <Button
         android:id="@+id/button25"
@@ -70,5 +45,31 @@
         android:layout_toRightOf="@+id/textView3"
         android:background="@null"
         android:text="Next" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editText1"
+        android:text="Seasonal" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/edittext"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editText2"
+        android:text=" Famous Dishes" />
 
 </RelativeLayout>

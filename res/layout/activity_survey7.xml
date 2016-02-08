@@ -31,7 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+         />
 
     <TextView
         android:id="@+id/textView3"
@@ -70,7 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" 
+        android:background="@drawable/edittext"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -78,7 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ratingBar2"
         android:layout_below="@+id/textView5"
-        android:ems="10" >
+        android:ems="10"
+        android:background="@drawable/edittext" >
 
         <requestFocus />
     </EditText>
@@ -104,6 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext" />
 
 </RelativeLayout>

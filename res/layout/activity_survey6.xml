@@ -24,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
     <TextView
         android:id="@+id/textView5"
@@ -40,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true"
-        android:ems="10" >
+        android:ems="10"
+        android:background="@drawable/edittext" >
 
         <requestFocus />
     </EditText>
@@ -68,7 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@drawable/edittext" />
 
     <Button
         android:id="@+id/button1"
@@ -94,7 +97,8 @@
         android1:layout_alignBaseline="@+id/radioButton2"
         android1:layout_alignBottom="@+id/radioButton2"
         android1:layout_toLeftOf="@+id/button1"
-        android1:text="YES" />
+        android1:text="YES" 
+        />
 
     <TextView
         android1:id="@+id/textView2"
