@@ -29,15 +29,6 @@
         android:ems="10"
         android:background="@drawable/edittext" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/but1"
-        android:layout_below="@+id/textView2"
-        android:ems="10"
-        android:background="@drawable/edittext" />
-
     <Button
         android:id="@+id/but1"
         android:layout_width="wrap_content"
@@ -72,5 +63,18 @@
         android:layout_marginTop="36dp"
         android:background="@null"
         android:text="Next" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@drawable/edittext"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

@@ -28,32 +28,6 @@
         android:ems="10"
         android:background="@drawable/edittext" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignTop="@+id/editText3"
-        android:text="Other Dishes" />
-
-    <Button
-        android:id="@+id/button25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
-        android:layout_marginTop="68dp"
-        android:layout_toRightOf="@+id/textView3"
-        android:background="@null"
-        android:text="Next" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/editText1"
-        android:text="Seasonal" />
-
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
@@ -64,12 +38,41 @@
         android:background="@drawable/edittext"
         android:ems="10" />
 
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="56dp"
+        android:background="@null"
+        android:text="Next" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/editText2"
-        android:text=" Famous Dishes" />
+        android:layout_alignRight="@+id/textView1"
+        android:text=" Fam Dishes" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="Seasonal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:text="Other Dishes" />
 
 </RelativeLayout>

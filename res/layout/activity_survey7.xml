@@ -57,34 +57,13 @@
         android:layout_centerHorizontal="true"
         android:text="Service Timing review" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@null"
-        android:text="Next" />
-
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" 
-        android:background="@drawable/edittext"/>
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/ratingBar2"
-        android:layout_below="@+id/textView5"
-        android:ems="10"
-        android:background="@drawable/edittext" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext" />
 
     <TextView
         android:id="@+id/textView6"
@@ -102,12 +81,34 @@
         android:layout_centerHorizontal="true"
         android:text="Description of surrounding" />
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/spinner1"
         android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/edittext" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="Next" />
 
 </RelativeLayout>
