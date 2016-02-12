@@ -14,7 +14,6 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:text="Vendor Details"
         android:textSize="30sp" />
@@ -54,16 +53,6 @@
         android:layout_alignLeft="@+id/TextView01"
         android:text="Latitude" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/but1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:background="@null"
-        android:text="Next" />
-
     <EditText
         android:id="@+id/editText8"
         android:layout_width="wrap_content"
@@ -76,5 +65,15 @@
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:background="@null"
+        android:text="Next" />
 
 </RelativeLayout>
