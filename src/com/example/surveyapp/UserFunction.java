@@ -80,5 +80,15 @@ import android.util.Log;
         return json;
         
 	}
+	public JSONObject Save_Details(String s1,String s2)
+	{
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair("tag","data"));
+		params.add(new BasicNameValuePair("email",s1));
+		params.add(new BasicNameValuePair("password",s2));
+		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
+		//Log.e(params.toString(),json.toString());
+		return json;
+	}
 
 }
