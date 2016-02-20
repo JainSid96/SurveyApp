@@ -26,8 +26,11 @@
         android:layout_marginTop="22dp"
         android:text="Food taste stars" />
 
+  
     <RatingBar
         android:id="@+id/ratingBar1"
+       style="@style/customRatingBar"
+       
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
@@ -44,6 +47,8 @@
 
     <RatingBar
         android:id="@+id/ratingBar2"
+        style="@style/customRatingBar"
+        
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ratingBar1"

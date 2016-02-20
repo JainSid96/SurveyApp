@@ -26,9 +26,14 @@ public final class R {
         public static final int edittext=0x7f020002;
         public static final int ic=0x7f020003;
         public static final int ic_launcher=0x7f020004;
-        public static final int rating_bar=0x7f020005;
+        public static final int rating_custom_bar=0x7f020005;
         public static final int red_star=0x7f020006;
-        public static final int street=0x7f020007;
+        public static final int star=0x7f020007;
+        public static final int star_blank=0x7f020008;
+        public static final int star_filled=0x7f020009;
+        public static final int star_half=0x7f02000a;
+        public static final int star_off=0x7f02000b;
+        public static final int street=0x7f02000c;
     }
     public static final class id {
         public static final int RadioButton01=0x7f08001d;
@@ -135,5 +140,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int customRatingBar=0x7f060002;
     }
 }
