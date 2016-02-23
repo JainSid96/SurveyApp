@@ -100,19 +100,6 @@
         android:text="Other"
         android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText3"
-        android:layout_marginBottom="20dp"
-        android:layout_toRightOf="@+id/textView6"
-        android:ems="10"
-        android:background="@drawable/edittext" >
-
-        <requestFocus />
-    </EditText>
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -133,5 +120,15 @@
         android:layout_alignLeft="@+id/editText3"
         android:ems="10"
         android:background="@drawable/edittext" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/edittext"
+        android:ems="10" />
 
 </RelativeLayout>
