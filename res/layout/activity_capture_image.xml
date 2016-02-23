@@ -8,31 +8,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CaptureImage" >
 
-    <Button
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iv1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:text="Capture Image" />
+     <ImageView
+         android:id="@+id/iv3"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_below="@+id/image"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="17dp"
+         android:src="@drawable/ico" />
 
-    <Button
-        android:id="@+id/next1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:background="@null"
-        android:text="Next" />
+     <ImageView
+         android:id="@+id/iv2"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_above="@+id/image2"
+         android:layout_toRightOf="@+id/image3"
+         android:src="@drawable/ico" />
 
-    <ImageView
-        android:id="@+id/iv1"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_launcher" />
+     <Button
+         android:id="@+id/image2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/iv3"
+         android:layout_toRightOf="@+id/iv3"
+         android:background="@null"
+         android:text=" Image 2" />
+
+     <Button
+         android:id="@+id/image3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/iv3"
+         android:layout_centerHorizontal="true"
+         android:background="@null"
+         android:text=" Image 3" />
+
+     <ImageView
+         android:id="@+id/iv1"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="16dp"
+         android:layout_toLeftOf="@+id/image3"
+         android:src="@drawable/ico" />
+
+     <Button
+         android:id="@+id/image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/iv1"
+         android:layout_toLeftOf="@+id/iv3"
+         android:background="@null"
+         android:text=" Image 1" />
+
+     <Button
+         android:id="@+id/next1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/image3"
+         android:layout_centerHorizontal="true"
+         android:background="@null"
+         android:text="Next" />
 
 </RelativeLayout>
