@@ -19,7 +19,7 @@
         android:text="Final Rating" />
 
     <RatingBar
-        android:id="@+id/ratingBar1"
+        android:id="@+id/ra1"
         
         style="@style/customRatingBar"
         android:layout_width="wrap_content"
