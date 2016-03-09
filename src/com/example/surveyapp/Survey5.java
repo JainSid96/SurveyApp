@@ -29,7 +29,7 @@ public class Survey5 extends Activity {
 		super.onCreate(savedInstanceState);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_survey5);
-		b1=(Button)findViewById(R.id.button26);
+		b1=(Button)findViewById(R.id.button1);
 		s1 = (Spinner) findViewById(R.id.spinner1);
 		s2=(Spinner)findViewById(R.id.spinner2);
 		ArrayAdapter<String>adapter=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, clean);
@@ -83,6 +83,24 @@ public class Survey5 extends Activity {
 		});
 		
 	}
+	public void rclick(View v)
+	{
+		
+		boolean checked = ((RadioButton) v).isChecked();
+	    
+	    // Check which radio button was clicked
+	    switch(v.getId()) {
+	        case R.id.radioButton1:
+	            if (checked)
+	            	Toast.makeText(Survey5.this,"yes", Toast.LENGTH_LONG).show();
+	            break;
+	        case R.id.radioButton2:
+	            if (checked)
+	            	Toast.makeText(Survey5.this,"no", Toast.LENGTH_LONG).show();
+	            break;
+	    }
+	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

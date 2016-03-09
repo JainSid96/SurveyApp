@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,13 +20,16 @@ import android.widget.Toast;
 public class Survey6 extends Activity {
 Button b1;
 Spinner sp4;
+private RadioGroup rgs;
+private RadioButton rb;
  String clean []={"0","1","2","3","4","5"};
 	@Override
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		setContentView(R.layout.activity_survey6);
+		setContentView(R.layout.act6new);
+		rgs = (RadioGroup) findViewById(R.id.g1);
 		b1=(Button)findViewById(R.id.button1);
 		sp4= (Spinner) findViewById(R.id.spinner1);
 		ArrayAdapter<String>adapter=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, clean);
@@ -65,6 +70,24 @@ Spinner sp4;
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.survey6, menu);
 		return true;
+	}
+	
+	public void rclick(View v)
+	{
+		
+		boolean checked = ((RadioButton) v).isChecked();
+	    
+	    // Check which radio button was clicked
+	    switch(v.getId()) {
+	        case R.id.radioButton1:
+	            if (checked)
+	            	Toast.makeText(Survey6.this,"yes", Toast.LENGTH_LONG).show();
+	            break;
+	        case R.id.radioButton2:
+	            if (checked)
+	            	Toast.makeText(Survey6.this,"no", Toast.LENGTH_LONG).show();
+	            break;
+	    }
 	}
 
 }
