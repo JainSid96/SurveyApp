@@ -25,14 +25,6 @@ import android.util.Log;
 		jsonParser = new JSONParser();
 	}
 
-	public JSONObject Load_All_user(String id) 
-	{
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("tag",All_User));
-		params.add(new BasicNameValuePair("id",id));
-		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
-        return json;
-	}
 
 
 	public JSONObject Load_Detail(String s1,String s2,String s3,String s4)
@@ -47,28 +39,9 @@ import android.util.Log;
         return json;
 	}
 	
-	public JSONObject Load_Login_Detail(String s1,String s2)
-	{
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("tag",Login_User));
-		params.add(new BasicNameValuePair("email",s1));
-		params.add(new BasicNameValuePair("password",s2));
-		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
-		//Log.e(params.toString(),json.toString());
-		return json;
-	}
 	
-	public JSONObject Load_Change_Detail(String s1,String s2,String s3){
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("tag",Change_Pass));
-		params.add(new BasicNameValuePair("email",s1));
-		params.add(new BasicNameValuePair("password",s2));
-		params.add(new BasicNameValuePair("newpass",s3));
-		
-		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
-		Log.e(params.toString(), json.toString());
-		return json;
-	}
+	
+	
 	public JSONObject ADDPhoto(String image,String email)
 	{
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -80,14 +53,16 @@ import android.util.Log;
         return json;
         
 	}
-	public JSONObject Save_Details(String s1,String s2)
+	public JSONObject Survey1_data_load(String s1,String s2,String s3,String s4)
 	{
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("tag","data"));
-		params.add(new BasicNameValuePair("email",s1));
-		params.add(new BasicNameValuePair("password",s2));
+		params.add(new BasicNameValuePair("tag","data1"));
+		params.add(new BasicNameValuePair("id",s1));
+		params.add(new BasicNameValuePair("name",s2));
+		params.add(new BasicNameValuePair("loc",s3));
+		params.add(new BasicNameValuePair("zip",s4));
 		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
-		//Log.e(params.toString(),json.toString());
+		Log.e(params.toString(),json.toString());
 		return json;
 	}
 

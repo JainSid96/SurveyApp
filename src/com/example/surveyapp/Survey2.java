@@ -1,7 +1,5 @@
 package com.example.surveyapp;
 
-import java.io.Console;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +15,7 @@ public class Survey2 extends Activity {
 Button b1;
 Intent ii;
 EditText  et5,et6,et7,et8,et9;
-String tphone,mob,timein,timeout,other,id,name,loc,zip;
+String tphone,mob,timein,timeout,other,id,name,loc,zip,i,m,k,l;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,12 +34,9 @@ String tphone,mob,timein,timeout,other,id,name,loc,zip;
 		timein=et8.getText().toString(); 
 		timeout = et9.getText().toString();
 		
-	      id = getIntent().getExtras().getString("id").toString();
-		  name = getIntent().getExtras().getString("name").toString();
-		  loc = getIntent().getExtras().getString("loc").toString();
-	      zip = getIntent().getExtras().getString("zip").toString();
-	      
-	      Toast.makeText(getApplicationContext(), id+name+loc,Toast.LENGTH_LONG).show();
+	
+	 
+	
 		b1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -50,7 +45,8 @@ String tphone,mob,timein,timeout,other,id,name,loc,zip;
 				
 				ii=new Intent(Survey2.this,Survey3.class);
 				
-			    
+               
+			   
 				startActivity(ii);
 			}
 		});

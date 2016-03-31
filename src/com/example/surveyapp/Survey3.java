@@ -4,7 +4,6 @@ package com.example.surveyapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,15 +16,7 @@ public class Survey3 extends Activity {
  Button b1,b2;
  GPSTracker gps;
  EditText et1,et2;
- String l=getIntent().getExtras().getString("name");
- String m=getIntent().getExtras().getString("loc");
- String k=getIntent().getExtras().getString("zip");
- String n=getIntent().getExtras().getString("mob");
- String p=getIntent().getExtras().getString("other");
- String t=getIntent().getExtras().getString("timein");
- String q=getIntent().getExtras().getString("timeout");
- 
- String lati,longi,tphone,mob,timein,timeout,other,id,name,loc,zip;
+ String q,w,e,r,t,y,u,o,m,lati,longi;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,20 +25,9 @@ public class Survey3 extends Activity {
 		b1 = (Button) findViewById(R.id.but1);
 		et1=(EditText)findViewById(R.id.editText8);
 		et2=(EditText)findViewById(R.id.editText9);
-		Bundle getUnique=getIntent().getExtras();
-	      id = getUnique.getString("id");
-		  name = getUnique.getString("name");
-		  loc = getUnique.getString("loc");
-	      zip = getUnique.getString("zip");
-	      tphone=getUnique.getString("tphone");
-	      mob=getUnique.getString("mob");
-	      timein=getUnique.getString("timein");
-	      timeout=getUnique.getString("timeout");
+		
+	      
 		b2=(Button)findViewById(R.id.button2);
-		Log.e("Intent Value",id+name);
-		//String g=getIntent().getExtras().getString("abc");
-		//Toast.makeText(Survey3.this, g, 98765).show();
-//Toast.makeText(getApplicationContext(),id+name+loc+zip+tphone+mob+timein+timeout,Toast.LENGTH_LONG).show();	
 		b1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -80,12 +60,11 @@ public class Survey3 extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent i;
-				//lati = et1.getText().toString();
-				//longi = et2.getText().toString();
-				i=new Intent(Survey3.this,Survey4.class);
-				
-				startActivity(i);
+				Intent ij;
+				lati = et1.getText().toString();
+				longi = et2.getText().toString();
+				ij=new Intent(Survey3.this,Survey4.class);
+				startActivity(ij);
 				
 			}
 		});
