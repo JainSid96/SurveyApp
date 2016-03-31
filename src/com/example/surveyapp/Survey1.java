@@ -53,9 +53,9 @@ String a;
 				String s4= et4.getText().toString();
 				try {
 					
-					json = userFunction.Survey1_data_load(s1, s2, s3, s4);
+				 json = userFunction.Load_Detail(s1, s2, s3, s4);
 					int success = json.getInt("success");
-					Toast.makeText(Survey1.this, success, 98765).show();
+					//Toast.makeText(Survey1.this, success, 98765).show();
 					 if (success == 1) 
 					 {
 						 Toast.makeText(getApplicationContext(), "Your data submittd", 3000).show();	

@@ -14,7 +14,7 @@ import android.util.Log;
   {
 	private JSONParser jsonParser;
 	private static String url_Appin_Technology="http://10.0.2.2/Survey/survey.php";
-    private static String  User_data="data";
+    private static String  User_data="data1";
     private static String All_User="user";
     private static String Login_User ="join";
     private static String Change_Pass = "pass";
@@ -31,10 +31,10 @@ import android.util.Log;
 	{
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
 		params.add(new BasicNameValuePair("tag",User_data));
-		params.add(new BasicNameValuePair("name",s1));
-		params.add(new BasicNameValuePair("email",s2));
-		params.add(new BasicNameValuePair("password",s3));
-		params.add(new BasicNameValuePair("bld",s4));
+		params.add(new BasicNameValuePair("id",s1));
+		params.add(new BasicNameValuePair("name",s2));
+		params.add(new BasicNameValuePair("loc",s3));
+		params.add(new BasicNameValuePair("zip",s4));
 		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
         return json;
 	}
@@ -53,17 +53,5 @@ import android.util.Log;
         return json;
         
 	}
-	public JSONObject Survey1_data_load(String s1,String s2,String s3,String s4)
-	{
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-		params.add(new BasicNameValuePair("tag","data1"));
-		params.add(new BasicNameValuePair("id",s1));
-		params.add(new BasicNameValuePair("name",s2));
-		params.add(new BasicNameValuePair("loc",s3));
-		params.add(new BasicNameValuePair("zip",s4));
-		JSONObject json = jsonParser.getJSONFromUrl(url_Appin_Technology, params);
-		Log.e(params.toString(),json.toString());
-		return json;
-	}
-
+	
 }
