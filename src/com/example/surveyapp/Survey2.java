@@ -1,5 +1,7 @@
 package com.example.surveyapp;
 
+import java.io.Console;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Survey2 extends Activity {
 Button b1;
@@ -33,11 +36,12 @@ String tphone,mob,timein,timeout,other,id,name,loc,zip;
 		timein=et8.getText().toString(); 
 		timeout = et9.getText().toString();
 		
-		Bundle getUnique=getIntent().getExtras();
-	      id = getUnique.getString("id");
-		 name = getUnique.getString("name");
-		 loc = getUnique.getString("loc");
-	      zip = getUnique.getString("zip");
+	      id = getIntent().getExtras().getString("id").toString();
+		  name = getIntent().getExtras().getString("name").toString();
+		  loc = getIntent().getExtras().getString("loc").toString();
+	      zip = getIntent().getExtras().getString("zip").toString();
+	      
+	      Toast.makeText(getApplicationContext(), id+name+loc,Toast.LENGTH_LONG).show();
 		b1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -46,19 +50,7 @@ String tphone,mob,timein,timeout,other,id,name,loc,zip;
 				
 				ii=new Intent(Survey2.this,Survey3.class);
 				
-                Bundle ab = new Bundle();
-				
-			    ab.putString("id",id);
-			    ab.putString("name",name);
-			    ab.putString("loc",loc);
-			    ab.putString("zip",zip);
-			    ab.putString("tphone",tphone);
-			    ab.putString("mob",mob);
-			    ab.putString("other",other);
-			    ab.putString("timein",timein);
-			    ab.putString("timeout",timeout);
 			    
-			    ii.putExtras(ab);
 				startActivity(ii);
 			}
 		});

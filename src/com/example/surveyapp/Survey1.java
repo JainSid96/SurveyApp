@@ -9,12 +9,13 @@ import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Survey1 extends Activity {
 Button b1;
 Intent i;
 EditText et1,et2,et3,et4;
-String id,name,loc,zip;
+String id1,name,loc,zip,a;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,7 +27,9 @@ String id,name,loc,zip;
 		et3=(EditText)findViewById(R.id.editText3);
 		et4=(EditText)findViewById(R.id.editText5);
 		
-		id=et1.getText().toString();
+		 a=et1.getText().toString();
+		 System.out.println(a);
+		
 		name=et2.getText().toString();
 		loc=et3.getText().toString();
 		zip=et4.getText().toString(); 
@@ -36,14 +39,15 @@ String id,name,loc,zip;
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				Toast.makeText(Survey1.this, et1.getText().toString(), 98765).show();
 				i=new Intent(Survey1.this,Survey2.class);
-				Bundle ab = new Bundle();
+				//Toast.makeText(Survey1.this, id, 98765).show();
 				
-			    ab.putString("id", id);
-			    ab.putString("name",name);
-			    ab.putString("loc",loc);
-			    ab.putString("zip",zip);
-			    i.putExtras(ab);
+			    i.putExtra("id", et1.getText().toString());
+			    i.putExtra("name",name);
+			    i.putExtra("loc",loc);
+			    i.putExtra("zip",zip);
+			   // Toast.makeText(getApplicationContext(),id+name+loc+zip,Toast.LENGTH_SHORT).show();
 				startActivity(i);
 			}
 		});
